@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PET - Lost and Found Pets</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Video Background -->
+   <!--
+
+     <video autoplay loop muted id="bgVideo">
+    <source src="videos/background.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+   -->
+
+
+  <!-- Header -->
+  <header>
+    <h1>PET</h1>
+  </header>
+
+  <!-- Main Section -->
+  <section class="main-section">
+    <h2>WE WILL HELP YOU TO FIND YOUR PET</h2>
+    <button id="openFormBtn">I Found a Pet</button>
+    <!-- New Button: Scroll to Posts Section -->
+    <button class="btn2" id="viewPostsBtn">View Found Pets</button>
+  </section>
+
+  <!-- Popup Form -->
+  <div id="popupForm" class="popup-form">
+    <div class="form-container">
+      <span id="closeForm" class="close">&times;</span>
+      <form id="petForm">
+        <h3>Report Found Pet</h3>
+        <label for="petType">Pet Type:</label>
+        <select name="petType" id="petType" required>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+
+        <label for="petImage">Pet Image:</label>
+        <input type="file" id="petImage" name="petImage" accept="image/*" required />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Where did you find it?" required />
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Additional details" required></textarea>
+
+        <label for="phone">Your phone:</label>
+        <textarea id="phone" name="phone" placeholder="+375123456789" required></textarea>
+        
+
+        <button class="btn-sumbit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Posts Section -->
+  <!-- Added an id for scrolling -->
+  <section class="posts-section" id="postsSection">
+    <h2>Found Pets</h2>
+    <!-- Filter Container -->
+    <div class="filter-container">
+      <label for="filterSelect">Filter by pet type:</label>
+      <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+    </div>
+    <div id="postsContainer" class="posts-container">
+      <!-- Pet cards will be rendered here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Contact Us</h3>
+    <p>Email: support@petservice.com</p>
+    <p>Phone: +1 234 567 890</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

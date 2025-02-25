@@ -1,0 +1,33 @@
+  /* Main Section */
+  .main-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main-section button {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
+  .main-section button {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+
+   }
+
+   .main-section button:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+     height: 1000px;
+   }
+  
